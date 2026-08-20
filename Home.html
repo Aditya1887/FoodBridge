@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodBridge - Share Food. Share Hope.</title>
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="navbar-header">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#" class="brand-logo">
+        <div class="logo-icon">
+          <svg class="logo-svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Top leaves -->
+            <path d="M24 6 C21 10 21 15 24 18 C27 15 27 10 24 6 Z" fill="#126b2b" stroke="none"/>
+            <path d="M17 10 C14 12 14 16 18 18 C19 15 18 12 17 10 Z" fill="#126b2b" stroke="none"/>
+            <path d="M31 10 C34 12 34 16 30 18 C29 15 30 12 31 10 Z" fill="#126b2b" stroke="none"/>
+            <!-- Bridge Arch -->
+            <path d="M12 28 Q 24 16 36 28" stroke="#126b2b" stroke-width="2.8" fill="none"/>
+            <line x1="18" y1="21" x2="18" y2="28" stroke="#126b2b" stroke-width="2.2"/>
+            <line x1="24" y1="19" x2="24" y2="28" stroke="#126b2b" stroke-width="2.2"/>
+            <line x1="30" y1="21" x2="30" y2="28" stroke="#126b2b" stroke-width="2.2"/>
+            <!-- Bottom cupped hands/leaves -->
+            <path d="M10 30 C14 42 34 42 38 30" stroke="#126b2b" stroke-width="2.8" fill="none"/>
+            <!-- Center Heart -->
+            <path d="M24 37 L22.5 35.5 C20.5 33.5 20.5 31.5 22.5 30 C23.5 29 25.5 29 26.5 30 L24 32.5 L22.5 30" fill="#126b2b" stroke="none"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title"><span class="logo-dark">Food</span><span class="logo-green">Bridge</span></span>
+          <span class="logo-tagline">Share Food. Share Hope.</span>
+        </div>
+      </a>
+
+      <!-- Menu Items -->
+      <nav class="nav-links">
+        <a href="#" class="nav-item active">
+          Home
+          <span class="active-dot"></span>
+        </a>
+        <a href="#" class="nav-item">Donate</a>
+        <a href="#" class="nav-item">Find Food</a>
+        <a href="#" class="nav-item">Impact</a>
+        <a href="#" class="nav-item">About</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="nav-actions">
+        <!-- Light / Dark Mode Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <!-- Sun Icon (Light Mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="M4.93 4.93l1.41 1.41"></path>
+            <path d="M17.66 17.66l1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="M6.34 17.66l-1.41 1.41"></path>
+            <path d="M18.36 5.64l1.41-1.41"></path>
+          </svg>
+          <!-- Moon Icon (Dark Mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Login / Sign Up Button -->
+        <a href="#" class="btn-login">
+          <svg class="user-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          Login / Sign Up
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Main Wrapper -->
+  <main class="hero-section" id="heroSection">
+    
+    <!-- Left Vertical Scroll Indicator -->
+    <div class="scroll-sidebar">
+      <span class="scroll-text">SCROLL</span>
+      <div class="scroll-line"></div>
+      <button class="scroll-arrow-btn" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="19 12 12 19 5 12"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Left Hero Copy Content -->
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="title-black">Small actions.</span><br>
+        <span class="title-black">Big change.</span><br>
+        <span class="title-green">
+          Zero waste.
+          <svg class="title-heart-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 7.5 C12 3.5 6 4 3.5 7.5 C1 11 2 16 6.5 20.5 L15 27 C15.5 27.5 16 27.5 16.5 27 L25.5 20.5 C30 16 31 11 28.5 7.5 C26 4 20 3.5 17 7.5 L16 8.5 L15 7.5 Z"></path>
+            <path d="M19 24 C16.5 26 14.5 27.5 12 29"></path>
+          </svg>
+        </span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Connecting surplus food with people in need<br>for a better tomorrow.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="hero-cta-group">
+        <div class="cta-row top-row">
+          <!-- Donate Food Button (Primary Dark Green) -->
+          <a href="#" class="cta-btn btn-donate">
+            <span class="btn-icon-wrapper badge-dark">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </span>
+            <span class="btn-label">Donate Food</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <!-- Find Food Nearby Button (Secondary Cream) -->
+          <a href="#" class="cta-btn btn-find">
+            <span class="btn-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21S4 14.5 4 9.5a8 8 0 1 1 16 0C20 14.5 12 21 12 21z"></path>
+                <circle cx="12" cy="9.5" r="2.5"></circle>
+              </svg>
+            </span>
+            <span class="btn-label">Find Food Nearby</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="cta-row bottom-row">
+          <!-- Get Involved Button (Tertiary Cream) -->
+          <a href="#" class="cta-btn btn-involved">
+            <span class="btn-icon-wrapper">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </span>
+            <span class="btn-label">Get Involved</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Floating Glassmorphism Overlay Cards -->
+    <div class="glass-overlays-container">
+      
+      <!-- Lower Right Glass Impact Badge Widget -->
+      <div class="glass-impact-widget">
+        <div class="avatars-row">
+          <img src="assets/avatar1.jpg" alt="User 1" class="avatar-img">
+          <img src="assets/avatar2.jpg" alt="User 2" class="avatar-img">
+          <img src="assets/avatar3.jpg" alt="User 3" class="avatar-img">
+          <img src="assets/avatar4.jpg" alt="User 4" class="avatar-img">
+          <span class="impact-count-badge">10K+</span>
+        </div>
+        <p class="impact-widget-text">People already<br>making an impact</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Bottom Dark Wave Live Impact Bar -->
+  <div class="bottom-impact-bar">
+    <!-- Dark Curved SVG wave top shape with shadow -->
+    <div class="impact-wave-wrapper">
+      <svg class="impact-wave-svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,60 C220,-20 440,-15 650,45 C860,105 1060,115 1240,55 C1350,20 1410,50 1440,65 L1440,120 L0,120 Z" class="wave-path"></path>
+      </svg>
+    </div>
+
+    <div class="impact-bar-content">
+      
+      <!-- Live Impact Indicator -->
+      <div class="live-impact-tag">
+        <span class="pulse-dot"></span>
+        Live Impact
+      </div>
+
+      <!-- Floating Seed Pod Illustration -->
+      <div class="floating-seed-pod">
+        <svg class="seed-pod-svg" viewBox="0 0 36 54" fill="none">
+          <path d="M18 3 C28 16 32 30 26 42 C21 49 14 51 9 46 C4 39 8 25 18 3 Z" fill="url(#seedPodGrad)" />
+          <path d="M18 3 C14 18 12 32 16 46" stroke="rgba(255,255,255,0.3)" stroke-width="1.2" />
+          <defs>
+            <linearGradient id="seedPodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#b6d498" />
+              <stop offset="50%" stop-color="#729853" />
+              <stop offset="100%" stop-color="#3c5729" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Stats Container -->
+      <div class="stats-group">
+        <!-- Stat Item 1 -->
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#34db76" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a4 4 0 0 0-4 4v4a4 4 0 0 0 8 0V6a4 4 0 0 0-4-4z"></path>
+              <path d="M12 14v8"></path>
+              <path d="M8 18h8"></path>
+              <path d="M18 8a6 6 0 0 1-12 0"></path>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <span class="stat-value">12.4K+</span>
+            <span class="stat-label">Meals Shared</span>
+          </div>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <!-- Stat Item 2 -->
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#34db76" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <span class="stat-value">8.2K+</span>
+            <span class="stat-label">People Helped</span>
+          </div>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <!-- Stat Item 3 -->
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#34db76" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <span class="stat-value">540+</span>
+            <span class="stat-label">Communities</span>
+          </div>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <!-- Stat Item 4 -->
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#34db76" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <span class="stat-value">120+</span>
+            <span class="stat-label">NGO Partners</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Callout Trigger -->
+      <div class="video-callout">
+        <div class="play-btn-glow-container">
+          <button class="play-btn" aria-label="Play Video">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="8 5 19 12 8 19 8 5"></polygon>
+            </svg>
+          </button>
+        </div>
+        <div class="video-text-group">
+          <span class="video-text">See how we<br>turn surplus into<br>smiles</span>
+          <svg class="curved-arrow-icon" viewBox="0 0 60 25" fill="none" stroke="#34db76" stroke-width="1.5">
+            <path d="M5 5 Q 35 30 55 12" stroke-linecap="round" />
+            <path d="M48 16 L 55 12 L 50 6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
